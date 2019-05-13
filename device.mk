@@ -19,6 +19,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 # Setup dalvik vm configs
  $(call inherit-product, frameworks/native/build/phone-xhdpi-8192-dalvik-heap.mk)
 
+# Device uses high-density artwork where available
+PRODUCT_AAPT_CONFIG := normal
+PRODUCT_AAPT_PREF_CONFIG := xxhdpi
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 31
 
