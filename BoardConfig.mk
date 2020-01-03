@@ -71,6 +71,9 @@ ZYGOTE_FORCE_64 := true
 # Force any prefer32 targets to be compiled as 64 bit.
 IGNORE_PREFER32_ON_DEVICE := true
 
+# RIL
+ENABLE_VENDOR_RIL_SERVICE := true
+
 # SPL
 BOOT_SECURITY_PATCH := 2024-12-05
 VENDOR_SECURITY_PATCH := 2024-12-05
