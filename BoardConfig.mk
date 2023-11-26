@@ -27,5 +27,8 @@ TARGET_BOARD_PLATFORM := mt6768
 BOARD_HAS_MTK_HARDWARE := true
 BOARD_VENDOR := motorola
 
+# Enable 64-bit for non-zygote.
+ZYGOTE_FORCE_64 := true
+
 # Inherit the proprietary files
 include vendor/motorola/penangf/BoardConfigVendor.mk
