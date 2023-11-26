@@ -30,5 +30,8 @@ BOARD_VENDOR := motorola
 # Enable 64-bit for non-zygote.
 ZYGOTE_FORCE_64 := true
 
+# Force any prefer32 targets to be compiled as 64 bit.
+IGNORE_PREFER32_ON_DEVICE := true
+
 # Inherit the proprietary files
 include vendor/motorola/penangf/BoardConfigVendor.mk
