@@ -5,6 +5,7 @@
 #
 
 DEVICE_PATH := device/motorola/penangf
+KERNEL_PATH := device/motorola/penangf-kernel
 
 # Architecture
 TARGET_ARCH := arm64
@@ -44,6 +45,9 @@ BOARD_MKBOOTIMG_ARGS += \
 # Kernel
 TARGET_NO_KERNEL := true
 BOARD_PREBUILT_BOOTIMAGE := $(DEVICE_PATH)-kernel/boot-5.10-gz.img
+
+# Workaround to make lineage's soong generator work
+TARGET_KERNEL_SOURCE := $(KERNEL_PATH)/kernel-headers
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := penangf
