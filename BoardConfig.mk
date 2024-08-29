@@ -41,6 +41,10 @@ BOARD_MKBOOTIMG_ARGS += \
     --ramdisk_offset $(BOARD_RAMDISK_OFFSET) \
     --tags_offset $(BOARD_TAGS_OFFSET)
 
+# Kernel
+TARGET_NO_KERNEL := true
+BOARD_PREBUILT_BOOTIMAGE := $(DEVICE_PATH)-kernel/boot-5.10-gz.img
+
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := penangf
 TARGET_NO_BOOTLOADER := true
