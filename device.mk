@@ -23,6 +23,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
+# Fastboot
+PRODUCT_PACKAGES += \
+    fastbootd
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 31
 
